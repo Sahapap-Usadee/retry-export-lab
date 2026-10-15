@@ -1,2 +1,3 @@
 __pycache__/
 .runtime/
+.cursor/skills/verify-retry-export/evidence/*/
