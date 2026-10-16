@@ -30,10 +30,10 @@ class ExportTest(unittest.TestCase):
             export_rows("fixtures/first.csv", target)
             export_rows("fixtures/first.csv", target)
             export_rows("fixtures/next.csv", target)
-            text = target.read_text(encoding="utf-8")
-            self.assertTrue(text.startswith("id,name\n"))
             with target.open(newline="", encoding="utf-8") as stream:
-                self.assertEqual(list(csv.DictReader(stream)), [
+                reader = csv.DictReader(stream)
+                self.assertEqual(reader.fieldnames, ["id", "name"])
+                self.assertEqual(list(reader), [
                     {"id": "1", "name": "Ada"},
                     {"id": "2", "name": "Lin"},
                     {"id": "3", "name": "Grace"},
