@@ -1,7 +1,7 @@
 # Retry export lab
 
 แบบฝึกหัดสำหรับ Grok Bot Chief → Engineer → Cursor Cloud Agent → pstack → evidence → PR
-นี่เป็นตัวอย่างเพื่อการเรียนรู้ ไม่ใช่โค้ดหรือ configuration ส่วนตัวของ Lauren Tan
+นี่เป็นตัวอย่างเพื่อการเรียนรู้ ไม่ใช่โค้ดหรือ configuration ส่วนตัว
 
 ## เริ่มทดลอง
 
